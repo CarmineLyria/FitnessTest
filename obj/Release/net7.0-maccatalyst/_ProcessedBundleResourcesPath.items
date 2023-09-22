@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\abdominalcrunch.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\armcurl.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\chestpress.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\dumbbell.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\inclineseat.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\innerouterthigh.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\latpulldown.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\legcurl.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\legextension.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\legpress.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\logo.png" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\lowbakextension.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\resistanceband.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\rotarytorso.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\seatedpushdown.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\seatedrow.jpg" />
+    <BundleResource Include="C:\Maui\FitnessTest\FitnessTest\obj\Release\net7.0-maccatalyst\resizetizer\r\Resources\shoulderpress.jpg" />
+    <BundleResource Include="obj\Release\net7.0-maccatalyst\resizetizer\f\OpenSans-Regular.ttf" />
+    <BundleResource Include="obj\Release\net7.0-maccatalyst\resizetizer\f\OpenSans-Semibold.ttf" />
+  </ItemGroup>
+</Project>

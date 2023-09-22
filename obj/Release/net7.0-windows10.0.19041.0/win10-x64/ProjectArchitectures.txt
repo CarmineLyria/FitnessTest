@@ -1,0 +1,1 @@
+C:\Maui\FitnessTest\FitnessTest\FitnessTest.csproj;x64

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessTest.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="logo.png" VerticalOptions="Start" AnchorY="168"/>
+            <Label Text="Welcome to the PTC Fitness app! What machine would you like to use today?" FontSize="18" Margin="30, 0" TextColor="{StaticResource Primary}"/>
+            <Grid BackgroundColor="#55555A" Margin="10" Padding="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="240"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="18*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="18*" />
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Source="abdominalcrunch.jpg" Grid.Row="0" Clicked="CreateData" AutomationId="1"/>
+                <ImageButton Source="armcurl.jpg" Grid.Row="0" Grid.Column="2" Clicked="CreateData" AutomationId="2"/>
+                <ImageButton Source="chestpress.jpg" Grid.Row="2" Clicked="CreateData" AutomationId="3"/>
+                <ImageButton Source="dumbbell.jpg" Grid.Row="2" Grid.Column="2" Clicked="CreateData" AutomationId="4"/>
+                <ImageButton Source="inclineseat.jpg" Grid.Row="4" Clicked="CreateData" AutomationId="5"/>
+                <ImageButton Source="innerouterthigh.jpg" Grid.Row="4" Grid.Column="2" Clicked="CreateData" AutomationId="6"/>
+                <ImageButton Source="latpulldown.jpg" Grid.Row="6" Clicked="CreateData" AutomationId="7"/>
+                <ImageButton Source="legcurl.jpg" Grid.Row="6" Grid.Column="2" Clicked="CreateData" AutomationId="8"/>
+                <ImageButton Source="legextension.jpg" Grid.Row="8" Clicked="CreateData" AutomationId="9"/>
+                <ImageButton Source="legpress.jpg" Grid.Row="8" Grid.Column="2" Clicked="CreateData" AutomationId="10"/>
+                <ImageButton Source="lowbakextension.jpg" Grid.Row="10" Clicked="CreateData" AutomationId="11"/>
+                <ImageButton Source="resistanceband.jpg" Grid.Row="10" Grid.Column="2" Clicked="CreateData" AutomationId="12"/>
+                <ImageButton Source="rotarytorso.jpg" Grid.Row="12" Clicked="CreateData" AutomationId="13"/>
+                <ImageButton Source="seatedpushdown.jpg" Grid.Row="12" Grid.Column="2" Clicked="CreateData" AutomationId="14"/>
+                <ImageButton Source="seatedrow.jpg" Grid.Row="14" Clicked="CreateData" AutomationId="15"/>
+                <ImageButton Source="shoulderpress.jpg" Grid.Row="14" Grid.Column="2" Clicked="CreateData" AutomationId="16"/>
+
+
+            </Grid>
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>
