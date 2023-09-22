@@ -1,0 +1,374 @@
+[
+    {
+      "MachineName": "Abdominal Crunch",
+      "id": 1,
+      "picture": "abdominalcrunch.jpg",
+      "possibleWeights": [ 50, 75, 100 ],
+      "data": [
+        {
+          "Weight": 50,
+          "Repetitions": 15,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 75,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 60,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-18"
+        },
+        {
+          "Weight": 70,
+          "Repetitions": 14,
+          "DatePerformed": "2023-09-17"
+        },
+        {
+          "Weight": 65,
+          "Repetitions": 13,
+          "DatePerformed": "2023-09-16"
+        }
+      ]
+    },
+    {
+      "MachineName": "Arm Curl",
+      "id": 2,
+      "picture": "armcurl.jpg",
+      "possibleWeights": [ 20, 30, 40 ],
+      "data": [
+        {
+          "Weight": 30,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-18"
+        },
+        {
+          "Weight": 25,
+          "Repetitions": 8,
+          "DatePerformed": "2023-09-17"
+        },
+        {
+          "Weight": 35,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-16"
+        },
+        {
+          "Weight": 40,
+          "Repetitions": 11,
+          "DatePerformed": "2023-09-15"
+        },
+        {
+          "Weight": 30,
+          "Repetitions": 9,
+          "DatePerformed": "2023-09-14"
+        }
+      ]
+    },
+    {
+      "MachineName": "Chest Press",
+      "id": 3,
+      "picture": "chestpress.jpg",
+      "possibleWeights": [ 100, 150, 200 ],
+      "data": [
+        {
+          "Weight": 100,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 150,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 120,
+          "Repetitions": 8,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Dumbbell",
+      "id": 4,
+      "picture": "dumbbell.jpg",
+      "possibleWeights": [ 10, 15, 20 ],
+      "data": [
+        {
+          "Weight": 15,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 20,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 10,
+          "Repetitions": 15,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Incline Seat",
+      "id": 5,
+      "picture": "inclineseat.jpg",
+      "possibleWeights": [ 60, 90, 120 ],
+      "data": [
+        {
+          "Weight": 90,
+          "Repetitions": 8,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 120,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 60,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Inner Outer Thigh",
+      "id": 6,
+      "picture": "innerouterthigh.jpg",
+      "possibleWeights": [ 80, 120, 160 ],
+      "data": [
+        {
+          "Weight": 160,
+          "Repetitions": 15,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 80,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 120,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Lat Pulldown",
+      "id": 7,
+      "picture": "latpulldown.jpg",
+      "possibleWeights": [ 70, 100, 130 ],
+      "data": [
+        {
+          "Weight": 70,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 130,
+          "Repetitions": 8,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 100,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Leg Curl",
+      "id": 8,
+      "picture": "legcurl.jpg",
+      "possibleWeights": [ 40, 60, 80 ],
+      "data": [
+        {
+          "Weight": 60,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 80,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 40,
+          "Repetitions": 15,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Leg Extension",
+      "id": 9,
+      "picture": "legextension.jpg",
+      "possibleWeights": [ 50, 70, 90 ],
+      "data": [
+        {
+          "Weight": 70,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 90,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 50,
+          "Repetitions": 14,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Leg Press",
+      "id": 10,
+      "picture": "legpress.jpg",
+      "possibleWeights": [ 150, 200, 250 ],
+      "data": [
+        {
+          "Weight": 150,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 200,
+          "Repetitions": 8,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 250,
+          "Repetitions": 6,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Low Back Extension",
+      "id": 11,
+      "picture": "lowbakextension.jpg",
+      "possibleWeights": [ 60, 80, 100 ],
+      "data": [
+        {
+          "Weight": 80,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 100,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 60,
+          "Repetitions": 14,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Resistance Band",
+      "id": 12,
+      "picture": "resistanceband.jpg",
+      "possibleWeights": [ 0, 0, 0 ],
+      "data": []
+    },
+    {
+      "MachineName": "Rotary Torso",
+      "id": 13,
+      "picture": "rotarytorso.jpg",
+      "possibleWeights": [ 70, 100, 130 ],
+      "data": [
+        {
+          "Weight": 100,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 70,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 130,
+          "Repetitions": 8,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Seated Push Down",
+      "id": 14,
+      "picture": "seatedpushdown.jpg",
+      "possibleWeights": [ 40, 60, 80 ],
+      "data": [
+        {
+          "Weight": 80,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 40,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 60,
+          "Repetitions": 14,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Seated Row",
+      "id": 15,
+      "picture": "seatedrow.jpg",
+      "possibleWeights": [ 50, 75, 100 ],
+      "data": [
+        {
+          "Weight": 100,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 75,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 50,
+          "Repetitions": 14,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    },
+    {
+      "MachineName": "Shoulder Press",
+      "id": 16,
+      "picture": "shoulderpress.jpg",
+      "possibleWeights": [ 40, 60, 80 ],
+      "data": [
+        {
+          "Weight": 80,
+          "Repetitions": 12,
+          "DatePerformed": "2023-09-20"
+        },
+        {
+          "Weight": 60,
+          "Repetitions": 10,
+          "DatePerformed": "2023-09-19"
+        },
+        {
+          "Weight": 40,
+          "Repetitions": 8,
+          "DatePerformed": "2023-09-18"
+        }
+      ]
+    }
+]

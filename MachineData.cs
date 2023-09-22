@@ -1,44 +1,17 @@
-﻿namespace FitnessTest
+﻿using System.Text.Json.Serialization;
+
+namespace FitnessTest
 {
     public class MachineData
-
-    /* Unmerged change from project 'FitnessTest (net7.0-android)'
-    Before:
-        {
-
-            public int Weight { get; set; }
-    After:
-        {
-
-            public int Weight { get; set; }
-    */
-
-    /* Unmerged change from project 'FitnessTest (net7.0-ios)'
-    Before:
-        {
-
-            public int Weight { get; set; }
-    After:
-        {
-
-            public int Weight { get; set; }
-    */
-
-    /* Unmerged change from project 'FitnessTest (net7.0-maccatalyst)'
-    Before:
-        {
-
-            public int Weight { get; set; }
-    After:
-        {
-
-            public int Weight { get; set; }
-    */
     {
-
+        [JsonPropertyName("Weight")]
         public int Weight { get; set; }
+
+        [JsonPropertyName("Repetitions")]
         public int Repetitions { get; set; }
-        public DateTime DatePerformed { get; set; }
+
+        [JsonPropertyName("DatePerformed")]
+        public string DatePerformed { get; set; }
 
         public MachineData() { }
 
@@ -46,7 +19,7 @@
         {
             this.Weight = weight;
             this.Repetitions = repetitions;
-            this.DatePerformed = datePerformed;
+            this.DatePerformed = datePerformed.ToString();
         }
     }
 }

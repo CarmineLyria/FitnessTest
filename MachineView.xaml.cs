@@ -6,137 +6,93 @@ namespace FitnessTest;
 
 public partial class MachineView : ContentPage
 {
-
+    List<Machine> jsonData;
+    string filename = "utazukin.json";
+    string jsonContent = "";
     Machine machine;
+    AssetManager assets = Android.App.Application.Context.Assets;
+
     public MachineView(int id)
     {
-        List<Machine> jsonData;
         InitializeComponent();
-        AssetManager assets = Android.App.Application.Context.Assets;
-        string filename = "utazukin.json";
-        string jsonContent = "";
+
         try
         {
-            // Open a stream to the file in the Raw directory
-            using (StreamReader reader = new StreamReader(assets.Open(filename)))
+            // Get the full path to the JSON file in your project directory
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filename);
+
+            if (File.Exists(filePath))
             {
-                jsonContent = reader.ReadToEnd();
+                // Read the JSON content from the file
+                jsonContent = File.ReadAllText(filePath);
+            }
+            else
+            {
+                Console.WriteLine($"File not found: {filePath}");
             }
 
-            // Now, you can deserialize the JSON content
+            Console.WriteLine(jsonContent);
             jsonData = JsonSerializer.Deserialize<List<Machine>>(jsonContent);
             machine = jsonData.FirstOrDefault(m => m.id == id);
             Console.WriteLine("If you got this far, congrats! it works.");
         }
-        catch (Exception ex)
+        catch (JsonException ex)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine("JSON Deserialization Error: " + ex.Message);
+            Console.WriteLine("JSON Path: " + ex.Path);
+            Console.WriteLine("Line Number: " + ex.LineNumber);
+            Console.WriteLine("Byte Position in Line: " + ex.BytePositionInLine);
+            Console.WriteLine(ex.StackTrace);
         }
-        /*switch (id)
-        {
-            case 1:
-                contentImage.Source = "abdominalcrunch.jpg";
-                contentLabel.Text = "Abdominal Crunch";
-
-                break;
-
-            case 2:
-                contentImage.Source = "armcurl.jpg";
-                contentLabel.Text = "Arm Curl";
-                break;
-
-            case 3:
-                contentImage.Source = "chestpress.jpg";
-                contentLabel.Text = "Chest Press";
-                break;
-
-            case 4:
-                contentImage.Source = "dumbbell.jpg";
-                contentLabel.Text = "Dumbbell";
-                break;
-
-            case 5:
-                contentImage.Source = "inclineseat.jpg";
-                contentLabel.Text = "Incline Seat";
-                break;
-
-            case 6:
-                contentImage.Source = "innerouterthigh.jpg";
-                contentLabel.Text = "Inner Outer Thigh";
-                break;
-
-            case 7:
-                contentImage.Source = "latpulldown.jpg";
-                contentLabel.Text = "Lat Pulldown";
-                break;
-
-            case 8:
-                contentImage.Source = "legcurl.jpg";
-                contentLabel.Text = "Leg Curl";
-                break;
-
-            case 9:
-                contentImage.Source = "legextension.jpg";
-                contentLabel.Text = "Leg Extension";
-                break;
-
-            case 10:
-                contentImage.Source = "legpress.jpg";
-                contentLabel.Text = "Leg Press";
-                break;
-
-            case 11:
-                contentImage.Source = "lowbakextension.jpg";
-                contentLabel.Text = "Low Back Extension";
-                break;
-
-            case 12:
-                contentImage.Source = "resistanceband.jpg";
-                contentLabel.Text = "Resistance Band";
-                break;
-
-            case 13:
-                contentImage.Source = "rotarytorso.jpg";
-                contentLabel.Text = "Rotary Torso";
-                break;
-
-            case 14:
-                contentImage.Source = "seatedpushdown.jpg";
-                contentLabel.Text = "Seated Push Down";
-                break;
-
-            case 15:
-                contentImage.Source = "seatedrow.jpg";
-                contentLabel.Text = "Seated Row";
-                break;
-
-            case 16:
-                contentImage.Source = "shoulderpress.jpg";
-                contentLabel.Text = "Shoulder Press";
-                break;
-        }*/
-
-
-        /*string holder;
-        try
-        {
-
-            string content = File.ReadAllText("utazukin.json");
-            jsonData = JsonSerializer.Deserialize<List<Machine>>(content);
-            machine = jsonData.FirstOrDefault(m => m.id == id);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
-
-
 
         if (machine != null)
         {
             this.BindingContext = machine;
-        }*/
+        }
 
+        try
+        {
+            ExercisesList.ItemsSource = machine.data;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
+    }
+
+    public void AddValue(object sender, EventArgs e)
+    {
+        MachineData newData = new MachineData();
+
+        try
+        {
+            newData.Weight = int.Parse(weightPicker.SelectedItem.ToString());
+            newData.Repetitions = int.Parse(repsEntry.Text);
+            newData.DatePerformed = datepicker.Date.ToShortDateString();
+            machine.data.Add(newData);
+            try
+            {
+                // Serialize the updated jsonData list to a JSON string
+                string reserializedData = JsonSerializer.Serialize<List<Machine>>(jsonData);
+
+                // Get the app's data directory
+                string appDataDir = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+
+                // Create the full path to the writable JSON file
+                string filePath = Path.Combine(appDataDir, filename);
+
+                // Write the serialized JSON string to the file
+                File.WriteAllText(filePath, reserializedData);
+
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        } catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
+        
     }
 
 }

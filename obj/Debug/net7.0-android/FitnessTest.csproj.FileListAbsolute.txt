@@ -19,6 +19,9 @@ C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\sp\drawable
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\sp\values\maui_colors.xml
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\mauisplash.stamp
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\mauifont.stamp
+C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\f\AvenirLTStd-Black.otf
+C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\f\AvenirLTStd-Book.otf
+C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\f\AvenirLTStd-Roman.otf
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\f\OpenSans-Regular.ttf
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\f\OpenSans-Semibold.ttf
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\resizetizer\r\drawable\abdominalcrunch.jpg
@@ -980,3 +983,4 @@ C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\stamp\_ConvertResources
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Maui\FitnessTest\FitnessTest\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Maui\FitnessTest\FitnessTest\bin\Debug\net7.0-android\utazukin.json
